@@ -6,6 +6,7 @@
 
   function SimpleController($scope, WeatherService){
     $scope.message = 'Hello There!';
-    WeatherService.getHourlyData(29,-82);
+    // WeatherService.getHourlyData(29,-82);
+    WeatherService.getMinutelyData(29,-82);
   }
 })();

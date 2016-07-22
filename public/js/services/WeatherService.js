@@ -31,7 +31,20 @@
                       console.log(service.weather);
                   });
     }
-    function getMinutelyData(lat, lon){}
+    function getMinutelyData(lat, lon){
+      var url = baseUrl + 'forecast/minutely/' + lat + ',' + lon;
+      console.log(service.weather);
+      var config = {
+        headers: {
+          'passphrase': passphrase
+        }
+      };
+      return $http.get(url, config)
+                  .then(function(response){
+                    service.weather = response.data;
+                    console.log(service.weather);
+                  });
+    }
     function getDailyData(lat, lon) {}
   }
 })();
