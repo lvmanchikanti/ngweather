@@ -27,6 +27,7 @@
       return $http.get(url, config)
                   .then(function(response){ //sent back from the server to the front end
                       service.weather = response.data;
+                      console.log(service.weather);
                   });
     }
     function getMinutelyData(lat, lon){
