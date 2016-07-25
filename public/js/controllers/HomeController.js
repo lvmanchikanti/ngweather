@@ -1,10 +1,10 @@
 (function(){
-  angular.module('ngWeather')
+  angular.module('ngweather')
           .controller('HomeController', HomeController);
 
   HomeController.$inject = [];
 
   funtion HomeController(){
-    
+
   }
 })();
