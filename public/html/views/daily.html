@@ -1,1 +1,33 @@
-<h1>DAILY!</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h3>Latitude: {{dailyData.latitude}}, Longitude: {{dailyData.longitude}}</h3>
+      <!-- <h2>{{dailyData.summary}}</h2> -->
+    </div>
+  </div>
+  <div class="row" ng-repeat='card in dailyData.daily'>
+    <div class="col-md-6 col-md-offset-2 well">
+      <div class="col-md-4">
+        <img ng-src="images/{{card.icon}}.png" alt="card.icon" style='width: 100px;'>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <h4>Precipitation Probability: {{card.precipProb * 100 | number:0}}%</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Humidity: {{card.humidity * 100 | number:0}} % </h5>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Low: {{card.tempMin}}&deg;F</h4>
+        </div>
+        <div class="col-md-6">
+          <h4>High: {{card.tempMax}}&deg;F</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
