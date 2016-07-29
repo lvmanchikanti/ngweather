@@ -1,7 +1,17 @@
 <link rel="stylesheet" href="css/main.css">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="pagehead navbar-left">Daily Weather</ul>
+      <a class="navbar-brand" href="#/">
+        <img class="therm" alt="Brand" src="../images/thermometer.png" width="30px" height="30px">
+      </a>
+    </div>
+  </div>
+</nav>
 <div class="container">
   <div class="row">
-    <div class="col-md-6 col-md-offset-4">
+    <div class="col-md-6 col-md-offset-4" id="headerspace">
       <h3 class="latlong">Latitude: {{dailyData.latitude}}, Longitude: {{dailyData.longitude}}</h3>
     </div>
   </div>

@@ -1,9 +1,27 @@
 body {
   background-color: #005b96;
-
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .latlong {
   font-family: 'Fjalla One', sans-serif;
   color: white;
+}
+
+.pagehead {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+#headerspace {
+  padding-top: 70px;
+}
+
+#navbar {
+  background-color: #8b9dc3;
+}
+
+.therm {
+  margin-left: 700px;
 }
