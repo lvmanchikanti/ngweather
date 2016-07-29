@@ -1,4 +1,9 @@
 body {
   background-color: #005b96;
+
+}
+
+.latlong {
   font-family: 'Fjalla One', sans-serif;
+  color: white;
 }
