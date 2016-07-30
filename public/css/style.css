@@ -1,7 +1,7 @@
 body {
   background-color: lightblue;
   position: relative;
-  background-image: url("../images/htmlback.jpg");
+  background-image: url("../images/pexels-photo.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
 
@@ -10,8 +10,8 @@ body {
 .welcome {
   color: #fff;
   text-align: center;
-  padding-top: 100px;
-  font-family: 'Fjalla One', sans-serif;
+  padding-top: 180px;
+  font-family: 'Raleway', sans-serif;
   font-size: 80px;
 }
 .ghost-button{
@@ -55,4 +55,14 @@ input[type="text"]:active {
 
 .animate-enter.animate-enter-active {
 	opacity: 1;
+}
+
+#foot {
+padding-top: 100px;
+height: 10px;
+}
+
+#foot p {
+  text-align: center;
+  color: white;
 }
